@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="bot">
+    <input type="text" name="" id="bot2">
+    <input type="button" id="send" value="send">
+</body>
+<script>
+    const bot = document.getElementById("bot")
+    const bot2= document.getElementById("bot2")
+    const send = document.getElementById("send")
+
+    send.addEventListener("click", (calc)=>{
+        window.alert(parseInt(bot.value) + parseInt(bot2.value))
+    })
+
+</script>
+</html>

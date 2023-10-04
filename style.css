@@ -8,9 +8,48 @@
     --cor2: rgb(0,255,0);
     --cor3: rgb(0,0,255);
 }
-h1,h2, p{
-    margin: 0 auto;
+body{
+    background-image: linear-gradient(rgb(49, 49, 49), rgb(204, 204, 204));
+}
+h1,p,h2{
     text-align: center;
-    padding: 10px;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+iframe{
+    transform: translate(-50%,0);
+    position: relative;
+    left: 50%;
     width: 80%;
+    height: 600px;
+    border-radius: 10px;
+    border-bottom: 20px solid black;
+    border-top: 50px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+
+}
+#iniciar{
+    cursor: pointer;
+    color: red;
+    font-size: 2rem;
+}
+#imageLink img{
+    transform: translate(-50%, 0);
+    position: relative;
+    width: 25%;
+    left: 50%;
+}
+::-webkit-scrollbar{
+    background-color: rgb(116, 116, 116);
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-image: url(imagens/ScrollbarThumbrl.png);
+    background-size: 100% 100%;
+    border-radius: 5px;
 }

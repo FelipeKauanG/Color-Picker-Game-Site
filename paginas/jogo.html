@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        *{
+            image-rendering: pixelated;
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image: linear-gradient(red, blue);
+            background-attachment: fixed;
+        }
+        #target{
+            margin-top: 50px;
+            position: relative;
+            transform: translate(-50%, 0%);
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            border: 10px;
+            background-image: url(../imagens/question.png);
+            background-size: 100% 100%;
+            border-radius: 10px;
+            border: 5px solid black;
+            cursor: pointer;
+        }
+        #inputs{
+            transform: translate(-50%, 0);
+            position: relative;
+            display: block;
+            left: 50%;
+            display: inline-block;
+        }
+        input{
+            font-size: 2em;
+            text-align: center;
+            width: 80px;
+            border: none;
+            height: 80px;
+            margin: 10px;
+            border-radius: 30px;
+            color: rgb(0, 0, 0);
+        }
+        input[type="button"]{
+            font-size: 1em;
+            cursor: pointer;
+        }
+        input{
+            box-sizing: border-box;
+        }
+        #red:hover{
+            border: 5px solid red;
+        }
+        #green:hover{
+            border: 5px solid green;
+        }
+        #blue:hover{
+            border: 5px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="topgame">
+        <div id="target"></div>
+    </div>
+    <br>
+    <form id="inputs" action="jogo.html">
+        <input type="text" min="0" max="255" required="true" name="vermelho" id="red">
+        <input type="text" min="0" max="255" required="true" name="verde" id="green">
+        <input type="text" min="0" max="255" required="true" name="azul" id="blue">
+        <br>
+        <input type="button" id="send" value="Verificar">
+    </form>
+</body>
+<script src="../script.js">
+</script>
+</html>
