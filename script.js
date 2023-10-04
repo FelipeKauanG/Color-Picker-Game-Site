@@ -14,8 +14,9 @@ let realRed = null
 let realGreen = null
 let realBlue = null
 
-
+var click = 0
 target.addEventListener("click", () =>{
+    click + 1
     red.value = null
     green.value = null
     blue.value = null
@@ -34,11 +35,16 @@ target.addEventListener("click", () =>{
 
 
 send.addEventListener("click", ()=>{
-    const palpiteRed = parseInt(red.value)
-    const palpiteGreen = parseInt(green.value)
-    const palpiteBlue = parseInt(blue.value)
+    if (click == 0){
+        window.alert("Clique na imagem de de '?' acima")
+    }else{
+        const palpiteRed = parseInt(red.value)
+        const palpiteGreen = parseInt(green.value)
+        const palpiteBlue = parseInt(blue.value)
 
-    var media = ((((100 - (((realRed-palpiteRed)**2)**0.5)+(100 - ((realGreen-palpiteGreen)**2)**0.5)+(100 - ((realBlue-palpiteBlue)**2)**0.5))/3)**2)**0.5)
-    window.alert(`Média: ${parseInt(media)}% Resultado: rgb(${realRed}, ${realGreen}, ${realBlue})`)
+        var media = ((((100 - (((realRed-palpiteRed)**2)**0.5)+(100 - ((realGreen-palpiteGreen)**2)**0.5)+(100 - ((realBlue-palpiteBlue)**2)**0.5))/3)**2)**0.5)
+        window.alert(`Média: ${parseInt(media)}% Resultado: rgb(${realRed}, ${realGreen}, ${realBlue})`)
+    }
+    
 })
 

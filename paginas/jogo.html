@@ -44,6 +44,7 @@
             height: 80px;
             margin: 10px;
             border-radius: 30px;
+            overflow: hidden;
             color: rgb(0, 0, 0);
         }
         input[type="button"]{
@@ -70,9 +71,9 @@
     </div>
     <br>
     <form id="inputs" action="jogo.html">
-        <input type="text" min="0" max="255" required="true" name="vermelho" id="red">
-        <input type="text" min="0" max="255" required="true" name="verde" id="green">
-        <input type="text" min="0" max="255" required="true" name="azul" id="blue">
+        <input type="number" min="0" max="255" required="true" name="vermelho" id="red">
+        <input type="number" min="0" max="255" required="true" name="verde" id="green">
+        <input type="number" min="0" max="255" required="true" name="azul" id="blue">
         <br>
         <input type="button" id="send" value="Verificar">
     </form>
