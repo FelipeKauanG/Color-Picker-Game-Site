@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    image-rendering: pixelated;
+}
+:root{
+    --cor1: rgb(255,0,0);
+    --cor2: rgb(0,255,0);
+    --cor3: rgb(0,0,255);
+}
+h1,h2, p{
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    width: 80%;
+}
