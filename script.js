@@ -1,4 +1,3 @@
-const iniciar = document.getElementById("iniciar")
 const jogo = document.getElementById("jogo")
 const red = document.getElementById("red")
 const green = document.getElementById("green")
