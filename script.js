@@ -39,16 +39,13 @@ send.addEventListener("click", ()=>{
     if (click == 0){
         window.alert("Clique na imagem de de '?' acima")
     }
-    if (!Number.isNaN(palpiteRed) && !Number.isNaN(palpiteGreen) && !Number.isNaN(palpiteBlue)){
+    else{
         const palpiteRed = parseInt(red.value)
         const palpiteGreen = parseInt(green.value)
         const palpiteBlue = parseInt(blue.value)
 
         var media = ((((100 - (((realRed-palpiteRed)**2)**0.5)+(100 - ((realGreen-palpiteGreen)**2)**0.5)+(100 - ((realBlue-palpiteBlue)**2)**0.5))/3)**2)**0.5)
         window.alert(`Média: ${parseInt(media)}% Resultado: rgb(${realRed}, ${realGreen}, ${realBlue})`)
-    }
-    else{
-        window.alert("Digite todos os números !")
     }
     
 })
