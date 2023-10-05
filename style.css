@@ -21,7 +21,6 @@ h1,p,h2{
     color: rgb(255, 255, 255);
 }
 iframe{
-    display: none;
     transform: translate(-50%,0);
     position: relative;
     left: 50%;

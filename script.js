@@ -16,10 +16,6 @@ let realBlue = null
 
 var click = 0
 
-iniciar.addEventListener("click", ()=>{
-    jogo.style.display = "block"
-})
-
 target.addEventListener("click", function (){
     click += 1
     red.value = null
