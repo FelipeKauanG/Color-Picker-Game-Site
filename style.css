@@ -9,7 +9,7 @@
     --cor3: rgb(0,0,255);
 }
 body{
-    background-image: linear-gradient(rgb(49, 49, 49), rgb(204, 204, 204));
+    background-image: linear-gradient(rgb(22, 22, 22), rgb(10,10,10));
 }
 h1,p,h2{
     text-align: center;
@@ -21,17 +21,18 @@ h1,p,h2{
     color: rgb(255, 255, 255);
 }
 iframe{
+    display: none;
     transform: translate(-50%,0);
     position: relative;
     left: 50%;
     width: 80%;
-    height: 600px;
+    height: 500px;
     border-radius: 10px;
     border-bottom: 20px solid black;
     border-top: 50px solid black;
     border-left: 10px solid black;
     border-right: 10px solid black;
-
+    background-image: url(imagens/background.gif);
 }
 #iniciar{
     cursor: pointer;
@@ -45,11 +46,14 @@ iframe{
     left: 50%;
 }
 ::-webkit-scrollbar{
-    background-color: rgb(116, 116, 116);
-    width: 10px;
+    background-color: black;
 }
 ::-webkit-scrollbar-thumb{
     background-image: url(imagens/ScrollbarThumbrl.png);
     background-size: 100% 100%;
-    border-radius: 5px;
+}
+@media screen and (max-width:1110px) {
+    iframe{
+        height: 600px;
+    }
 }
